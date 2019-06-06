@@ -63,9 +63,11 @@ section {
   height: 100vh;
   position: fixed;
   overflow: hidden;
-  transition: all .3s ease; }
+  transition: all .8s ease; }
   section.active {
     pointer-events: all; }
+  section h1 {
+    background-color: #ff0000; }
 
 /*=========== 00. General ================ */
 .img {

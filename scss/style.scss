@@ -80,9 +80,12 @@ section{
     position: fixed;
     
     overflow: hidden;
-    transition: all .3s ease;
+    transition: all .8s ease;
     &.active{
         pointer-events: all;
+    }
+    h1{
+        background-color: #ff0000;
     }
 }
 /*=========== 00. General ================ */

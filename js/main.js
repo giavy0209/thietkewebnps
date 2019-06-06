@@ -1,7 +1,7 @@
 var body = document.querySelector('body'),
     section = Array.from(document.querySelectorAll('section'));
     section.forEach(function(el,index){
-            el.style.left = 110 * index + "%";
+            el.style.left = 101 * index + "%";
     })
 
 
@@ -18,15 +18,15 @@ body.addEventListener('wheel',function(event){
         if(sectionActive.nextElementSibling != null){
             sectionActive.nextElementSibling.classList.add('active');
             sectionActive.classList.remove('active')
-            // sectionActive.style.left = "-110%"
+            // sectionActive.style.left = "-101%"
             for(indexOfActive; indexOfActive < section.length; indexOfActive++){
-                section[indexOfActive].style.left = 110 * index + "%";
+                section[indexOfActive].style.left = 101 * index + "%";
                 index++;
             }
             var indexOfActive = section.indexOf(sectionActive);
             var index = 1;
             for(indexOfActive; indexOfActive >= 0; indexOfActive--){
-                section[indexOfActive].style.left = "-" + (110 * index) + "%";
+                section[indexOfActive].style.left = "-" + (101 * index) + "%";
                 index++;
             }
         }
@@ -38,13 +38,13 @@ body.addEventListener('wheel',function(event){
             sectionActive.previousElementSibling.classList.add('active');
             sectionActive.classList.remove('active');
             for(indexOfActive; indexOfActive < section.length; indexOfActive++){
-                section[indexOfActive].style.left = 110 * index + "%";
+                section[indexOfActive].style.left = 101 * index + "%";
                 index++;
             }
             var indexOfActive = section.indexOf(sectionActive) -2;
             var index = 1;
             for(indexOfActive; indexOfActive >= 0; indexOfActive--){
-                section[indexOfActive].style.left = "-" + (110 * index) + "%";
+                section[indexOfActive].style.left = "-" + (101 * index) + "%";
                 index++;
             }
         }
