@@ -1,6 +1,6 @@
 /*=========== 00. RESET CSS ================ */	
 html{
-    font-size: 18px;
+    font-size: 24px;
     scroll-behavior: smooth;
 }
 * {
@@ -36,7 +36,6 @@ video{
 body {
     &::-webkit-scrollbar {
         width: 4px;
-        z-index: 9999999999999999999999999999999999999999999999999999999;
         pointer-events: none;
         opacity: 0;
     }
@@ -61,7 +60,6 @@ body {
 }
 
 #bg{
-    background-image: radial-gradient(circle, #8fa5c3, #455873, #161f2b, #000000);
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -69,24 +67,18 @@ body {
     left: 0;
 }
 
-.hm-container {
+.nps-container {
     max-width: 86.75%;
     margin: 0 auto;
 }
 section{
-    pointer-events: none;
     width: 100vw;
     height: 100vh;
     position: fixed;
-    
     overflow: hidden;
     transition: all .8s ease;
-    &.active{
-        pointer-events: all;
-    }
-    h1{
-        background-color: #ff0000;
-    }
+    pointer-events: all
+    
 }
 /*=========== 00. General ================ */
 .img {
@@ -121,19 +113,19 @@ section{
     padding-top: 66.666%; 
     background-color: transparent;
 }
-.hm-row {
+.nps-row {
     font-size: 0;
     margin-left: -15px;
     margin-right: -15px;
-    > [class*="hm-col-"],&[class*="hm-column-"] .item{
+    > [class*="nps-col-"],&[class*="nps-column-"] .item{
         padding-left: 15px;
         padding-right: 15px;
         display: inline-block;
         vertical-align: top;
-        // font-size: 14px ;
+        font-size: 14px ;
     }
 }
-[class*="hm-col-"]{
+[class*="nps-col-"]{
     &.ta-l{
         text-align: left;
     }
@@ -144,250 +136,250 @@ section{
         text-align: right;
     }
 }
-.hm-col-fluid-16{
+.nps-col-fluid-16{
     width: 100%
 }
-.hm-col-fluid-15{
+.nps-col-fluid-15{
     width: 93.75%
 }
-.hm-col-fluid-14{
+.nps-col-fluid-14{
     width: 87.5%
 }
-.hm-col-fluid-13{
+.nps-col-fluid-13{
     width: 81.25%
 }
-.hm-col-fluid-12{
+.nps-col-fluid-12{
     width: 75%
 }
-.hm-col-fluid-11{
+.nps-col-fluid-11{
     width: 68.75%
 }
-.hm-col-fluid-10{
+.nps-col-fluid-10{
     width: 62.5%
 }
-.hm-col-fluid-9{
+.nps-col-fluid-9{
     width: 56.25%
 }
-.hm-col-fluid-8{
+.nps-col-fluid-8{
     width: 50%
 }
-.hm-col-fluid-7{
+.nps-col-fluid-7{
     width: 43.75%
 }
-.hm-col-fluid-6{
+.nps-col-fluid-6{
     width: 37.5%
 }
-.hm-col-fluid-5{
+.nps-col-fluid-5{
     width: 31.25%
 }
-.hm-col-fluid-4{
+.nps-col-fluid-4{
     width: 25%
 }
-.hm-col-fluid-3{
+.nps-col-fluid-3{
     width: 18.75%
 }
-.hm-col-fluid-2{
+.nps-col-fluid-2{
     width: 12.5%
 }
-.hm-col-fluid-1{
+.nps-col-fluid-1{
     width: 6.25%;
 }
-.hm-col-12 {
+.nps-col-12 {
     width: 100%;
 }
-.hm-col-11{
+.nps-col-11{
     width: 91.6666%
 }
-.hm-col-10{
+.nps-col-10{
     width: 83.33333%
 }
-.hm-col-9 {
+.nps-col-9 {
     width: 75%;
 }
-.hm-col-8 {
+.nps-col-8 {
     width: 66.666%;
 }
-.hm-col-7 {
+.nps-col-7 {
     width: 58.3333%;
 }
-.hm-col-6 {
+.nps-col-6 {
     width: 50%;
 }
-.hm-col-5 {
+.nps-col-5 {
     width: 41.6666%;
 }
-.hm-col-4 {
+.nps-col-4 {
     width: 33.33333%;
 }
-.hm-col-3 {
+.nps-col-3 {
     width: 25%;
 }
-.hm-col-2 {
+.nps-col-2 {
     width: 16.6666%;
 }
-.hm-col-1{
+.nps-col-1{
     width: 8.33333%;
 }
-.hm-push-1 {
+.nps-push-1 {
     margin-right: 8.3333%;
 }
-.hm-push-2 {
+.nps-push-2 {
     margin-right: 16.6666%;
 }
-.hm-push-3 {
+.nps-push-3 {
     margin-right: 25%;
 }
-.hm-push-4 {
+.nps-push-4 {
     margin-right: 33.333%;
 }
-.hm-push-5 {
+.nps-push-5 {
     margin-right: 41.6666%;
 }
-.hm-push-6 {
+.nps-push-6 {
     margin-right: 50%;
 }
-.hm-push-7 {
+.nps-push-7 {
     margin-right: 58.333%;
 }
-.hm-push-8 {
+.nps-push-8 {
     margin-right: 66.666%;
 }
-.hm-push-9 {
+.nps-push-9 {
     margin-right: 75%;
 }
-.hm-push-10 {
+.nps-push-10 {
     margin-right: 83.3333%;
 }
-.hm-pull-1 {
+.nps-pull-1 {
     margin-left: 8.3333%;
 }
-.hm-pull-2 {
+.nps-pull-2 {
     margin-left: 16.6666%;
 }
-.hm-pull-3 {
+.nps-pull-3 {
     margin-left: 25%;
 }
-.hm-pull-4 {
+.nps-pull-4 {
     margin-left: 33.333%;
 }
-.hm-pull-5 {
+.nps-pull-5 {
     margin-left: 41.6666%;
 }
-.hm-pull-6 {
+.nps-pull-6 {
     margin-left: 50%;
 }
-.hm-pull-7 {
+.nps-pull-7 {
     margin-left: 58.333%;
 }
-.hm-pull-8 {
+.nps-pull-8 {
     margin-left: 66.666%;
 }
-.hm-pull-9 {
+.nps-pull-9 {
     margin-left: 75%;
 }
-.hm-pull-10 {
+.nps-pull-10 {
     margin-left: 83.3333%;
 }
 /*============================*/
-.hm-push-fluid-16{
+.nps-push-fluid-16{
     margin-right: 100%
 }
-.hm-push-fluid-15{
+.nps-push-fluid-15{
     margin-right: 93.75%
 }
-.hm-push-fluid-14{
+.nps-push-fluid-14{
     margin-right: 87.5%
 }
-.hm-push-fluid-13{
+.nps-push-fluid-13{
     margin-right: 81.25%
 }
-.hm-push-fluid-12{
+.nps-push-fluid-12{
     margin-right: 75%
 }
-.hm-push-fluid-11{
+.nps-push-fluid-11{
     margin-right: 68.75%
 }
-.hm-push-fluid-10{
+.nps-push-fluid-10{
     margin-right: 62.5%
 }
-.hm-push-fluid-9{
+.nps-push-fluid-9{
     margin-right: 56.25%
 }
-.hm-push-fluid-8{
+.nps-push-fluid-8{
     margin-right: 50%
 }
-.hm-push-fluid-7{
+.nps-push-fluid-7{
     margin-right: 43.75%
 }
-.hm-push-fluid-6{
+.nps-push-fluid-6{
     margin-right: 37.5%
 }
-.hm-push-fluid-5{
+.nps-push-fluid-5{
     margin-right: 31.25%
 }
-.hm-push-fluid-4{
+.nps-push-fluid-4{
     margin-right: 25%
 }
-.hm-push-fluid-3{
+.nps-push-fluid-3{
     margin-right: 18.75%
 }
-.hm-push-fluid-2{
+.nps-push-fluid-2{
     margin-right: 12.5%
 }
-.hm-push-fluid-1{
+.nps-push-fluid-1{
     margin-right: 6.25%;
 }
 /*=================================*/
-.hm-pull-fluid-16{
+.nps-pull-fluid-16{
     margin-left: 100%
 }
-.hm-pull-fluid-15{
+.nps-pull-fluid-15{
     margin-left: 93.75%
 }
-.hm-pull-fluid-14{
+.nps-pull-fluid-14{
     margin-left: 87.5%
 }
-.hm-pull-fluid-13{
+.nps-pull-fluid-13{
     margin-left: 81.25%
 }
-.hm-pull-fluid-12{
+.nps-pull-fluid-12{
     margin-left: 75%
 }
-.hm-pull-fluid-11{
+.nps-pull-fluid-11{
     margin-left: 68.75%
 }
-.hm-pull-fluid-10{
+.nps-pull-fluid-10{
     margin-left: 62.5%
 }
-.hm-pull-fluid-9{
+.nps-pull-fluid-9{
     margin-left: 56.25%
 }
-.hm-pull-fluid-8{
+.nps-pull-fluid-8{
     margin-left: 50%
 }
-.hm-pull-fluid-7{
+.nps-pull-fluid-7{
     margin-left: 43.75%
 }
-.hm-pull-fluid-6{
+.nps-pull-fluid-6{
     margin-left: 37.5%
 }
-.hm-pull-fluid-5{
+.nps-pull-fluid-5{
     margin-left: 31.25%
 }
-.hm-pull-fluid-4{
+.nps-pull-fluid-4{
     margin-left: 25%
 }
-.hm-pull-fluid-3{
+.nps-pull-fluid-3{
     margin-left: 18.75%
 }
-.hm-pull-fluid-2{
+.nps-pull-fluid-2{
     margin-left: 12.5%
 }
-.hm-pull-fluid-1{
+.nps-pull-fluid-1{
     margin-left: 6.25%;
 }
 /*==================*/
-.hm-row.va-m [class*="hm-col-"] {
+.nps-row.va-m [class*="nps-col-"] {
     vertical-align: middle;
 }
 .text-c {
@@ -396,37 +388,37 @@ section{
 .margin-auto{
     margin: 0 auto;
 }
-.hm-column-6 .item {
+.nps-column-6 .item {
     width: 16.6666%;
     &:not(:nth-child(-n + 6)){
     margin-top: 30px;
     }
 }
-.hm-column-5 .item {
+.nps-column-5 .item {
     width: 20%;
     &:not(:nth-child(-n + 5)){
     margin-top: 30px;
     }
 }
-.hm-column-4 .item {
+.nps-column-4 .item {
     width: 25%;
     &:not(:nth-child(-n + 4)){
     margin-top: 30px;
     }
 }
-.hm-column-3 .item {
+.nps-column-3 .item {
     width: 33.3333%;
     &:not(:nth-child(-n + 3)){
     margin-top: 90px;
     }
 }
-.hm-column-2 .item {
+.nps-column-2 .item {
     width: 50%;
     &:not(:nth-child(-n + 2)){
     margin-top: 30px;
     }
 }
-.hm-column-1 .item {
+.nps-column-1 .item {
     width:100%;
     &:not(:nth-child(-n + 1)){
     margin-top: 30px;
@@ -437,16 +429,15 @@ section{
     display: block;
     clear: both;
 }
-.hm-input-group {
+.nps-input-group {
     position: relative;
     // font-size: 14px;
 }
-.hm-btn{
+.nps-btn{
     background-color: transparent;
     border: none;
 }
-.hm-container-fluid{
-    background-color: #0f4e45;
+.nps-container-fluid{
     width: 100%;
     padding: 0 15px;
 }
@@ -459,4 +450,169 @@ section{
 .plr-0{
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+main{
+    &#bg{
+        section{
+            > img{
+                width: 100vw;
+                height: 100vh;
+            }
+            &.page-1{
+                .nps-container-fluid{
+                    .title{
+                        position: absolute;
+                        top: 8.3333%;
+                        left: 50%;
+                        width: 40%;
+                        transform: translate(-50%, 0);
+                        h1{
+                            font-size: 3rem;
+                            text-transform: uppercase;
+                            text-align: center;
+                            color: #000;
+                        }
+                    }
+                    .logo{
+                        position: absolute;
+                        top: 8.3333%;
+                        left: 75%;
+                        width: 12%;
+                    }
+                    .social{
+                        position: absolute;
+                        top: 40%; 
+                        width: fit-content;
+                        left: 90%;
+                        z-index: 9;
+                        a{
+                            color: #000;
+                            display: block;
+                            font-size: 1.5rem;
+                            padding: 10px 0;
+                            transition: all .3s ease;
+                            &:hover{
+                                color: #455873;
+                            }
+                        }
+                    }
+                    .content{
+                        position: absolute;
+                        top: 30%;
+                        width: 100%;
+                        .des{
+                            h2{
+                                padding: 20px 0;
+                                font-size:1.5rem;
+                                color: #000;
+                            }
+                            p{
+                                font-size: 1rem;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+            &.page-2{
+                .nps-container-fluid{
+                    .title{
+                        position: absolute;
+                        top: 8.3333%;
+                        left: 50%;
+                        width: 80%;
+                        transform: translate(-50%, 0);
+                        h1{
+                            font-size: 2rem;
+                            color: #000;
+                            text-transform: uppercase;
+                            text-align: center;
+                        }
+                        .des{
+                            color: #000;
+                            margin-top: 20px;
+                        }
+                    }
+                    .contents{
+                        position: absolute;
+                        top: 40%;
+                        text-align: center;
+                        .content{
+                            background-color: #dbd7e4;
+                            border-radius: 20px;
+                            padding: 2rem;
+                            color: #000;
+                            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+                            .content-title{
+                                font-style: italic;
+                                h2{
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            &.page-3{
+                .content{
+                    position: absolute;
+                    top: 8.3333%;
+                    width: 100%;
+                    .des{
+                        h2{
+                            padding: 20px 0;
+                            font-size:1.5rem;
+
+                            color: #000;
+                        }
+                        p{
+                            font-size: 1rem;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            &.page-4{
+                .nps-container-fluid{
+                    .title{
+                        position: absolute;
+                        top: 8.3333%;
+                        left: 50%;
+                        width: 80%;
+                        transform: translate(-50%, 0);
+                        h1{
+                            font-size: 2rem;
+                            text-transform: uppercase;
+                            text-align: center;
+                            color: #000;
+                        }
+                        .des{
+                            color: #000;
+                            margin-top: 20px;
+                        }
+                    }
+                    .contents{
+                        position: absolute;
+                        top: 40%;
+                        text-align: center;
+                        .content{
+                            background-color: #dbd7e4;
+                            border-radius: 20px;
+                            padding: 2rem;
+                            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+                            color: #000;
+                            .content-title{
+                                h2{
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
 }

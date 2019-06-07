@@ -29,16 +29,14 @@ body.addEventListener('wheel',function(event){
                     index++;
                 }
             }else{
-                // var indexOfActive = section.indexOf(sectionActive) + 1;
-                // var index = 0;
-                section[0].classList.add('active')
                 section[section.length - 1].classList.remove('active');
+                section[0].classList.add('active');
                 section.forEach(function(el,index){
                     el.style.left = 101 * index + "%";
                 })
             }
         }
-    },300)
+    },400)
 
     setTimeout(function(){
         if(y < 0){
@@ -58,9 +56,8 @@ body.addEventListener('wheel',function(event){
                     index++;
                 }
             }else{
-                // debugger
-                section[section.length - 1].classList.add('active')
                 section[0].classList.remove('active');
+                section[section.length - 1].classList.add('active');
                 var i = 0;
                 for (let index = section.length - 1; index >= 0; index--) {
                     section[index].style.left = "-" + (101 * i) + "%";
@@ -68,5 +65,5 @@ body.addEventListener('wheel',function(event){
                 }
             }
         }
-    },300)
+    },400)
 }) 
